@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KnapsackController">
+    <children>
+        <Pane prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #FBBD87;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="56.0" prefWidth="560.0" text="Knapsack Problem Solution" textAlignment="CENTER">
+                    <font>
+                        <Font name="Forte" size="46.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutY="80.0" prefHeight="499.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="27.0" layoutY="-3.0" prefHeight="34.0" prefWidth="260.0" text="Items List">
+                    <font>
+                        <Font name="Elephant" size="17.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="tableView_List" layoutX="23.0" layoutY="31.0" prefHeight="200.0" prefWidth="560.0">
+                    <columns>
+                        <TableColumn fx:id="list_name" prefWidth="217.0" text="Name" />
+                        <TableColumn fx:id="list_Value" minWidth="0.0" prefWidth="172.0" text="Value" />
+                        <TableColumn fx:id="list_Weigth" minWidth="0.0" prefWidth="170.0" text="Weigth" />
+                    </columns>
+                </TableView>
+                <Label layoutX="14.0" layoutY="236.0" prefHeight="27.0" prefWidth="266.0" text="Kanapsack Solution, max weigth">
+                    <font>
+                        <Font name="Elephant" size="15.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="comBox" layoutX="288.0" layoutY="237.0" prefWidth="150.0" />
+                <TableView fx:id="tableView_Solution" layoutX="27.0" layoutY="270.0" prefHeight="217.0" prefWidth="560.0">
+                    <columns>
+                        <TableColumn fx:id="name_solution" prefWidth="210.0" text="Name" />
+                        <TableColumn fx:id="value_solution" minWidth="0.0" prefWidth="182.0" text="Value" />
+                        <TableColumn fx:id="weight_solution" minWidth="0.0" prefWidth="167.0" text="Weigth" />
+                        <TableColumn fx:id="valueWeight_solution" prefWidth="210.0" text="Name" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" prefHeight="694.0" prefWidth="1033.0" style="-fx-background-color: #6e9987;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="635.0" prefWidth="535.0">
+         <children>
+            <Text fx:id="messageText" fill="WHITE" layoutX="262.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laboratory 2">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="694.0" prefWidth="285.0" spacing="20.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+          <Button onAction="#home" prefHeight="58.0" prefWidth="323.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="68.0" onAction="#knapsackOnAction" onMousePressed="#knapsackOnMousePressed" prefHeight="58.0" prefWidth="266.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Knapsack" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="113.0" onAction="#nQueenOnAction" onMousePressed="#nQueenOnMousePressed" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="N Queen" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="72.0" layoutY="187.0" onAction="#knightTourOnAction" onMousePressed="#knightTourOnMousePressed" prefHeight="58.0" prefWidth="259.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Knight Tour" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="56.0" layoutY="265.0" onAction="#ratInMazeOnAction" onMousePressed="#ratInMazeOnMousePressed" prefHeight="58.0" prefWidth="256.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Rat in Maze" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="52.0" layoutY="344.0" onAction="#sudokuSolverOnAction" onMousePressed="#sudokuSolverOnMousePressed" prefHeight="58.0" prefWidth="231.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Sudoku Tour" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="159.0" onAction="#exit" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Exit" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+      </VBox>
+   </left>
+</BorderPane>
